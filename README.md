@@ -55,11 +55,9 @@ Create a new song.
   "titulo": "Song Title",
   "duracao": "03:45",
   "capa": "https://example.com/capa.jpg",
-  "artistas": [1, 2]
+  "nome": "Artist Name"
 }
 ```
-> Notes:  
-> - The `artistas` array contains the IDs of artists linked to this song.  
 
 ---
 
@@ -70,20 +68,8 @@ Retrieve all songs along with their artists.
 ```json
 [
   {
-    "id": 1,
     "titulo": "Song Title",
-    "duracao": "03:45",
-    "capa": "https://example.com/capa.jpg",
-    "artistas": [
-      {
-        "id": 1,
-        "nome": "Artist Name"
-      },
-      {
-        "id": 2,
-        "nome": "Another Artist"
-      }
-    ]
+    "nome": "Artist Name"
   }
 ]
 ```
